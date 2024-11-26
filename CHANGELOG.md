@@ -1,6 +1,26 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/cashier/compare/v15.4.1...15.x)
+## [Unreleased](https://github.com/laravel/cashier/compare/v15.5.1...15.x)
+
+## [v15.5.1](https://github.com/laravel/cashier/compare/v15.5.0...v15.5.1) - 2024-11-26
+
+* [15.x] Supports PHP 8.4 by [@crynobone](https://github.com/crynobone) in https://github.com/laravel/cashier-stripe/pull/1724
+
+## [v15.5.0](https://github.com/laravel/cashier/compare/v15.4.3...v15.5.0) - 2024-11-12
+
+* Update logo to support dark/light theme by [@milewski](https://github.com/milewski) in https://github.com/laravel/cashier-stripe/pull/1717
+* Bump stripe/stripe-php to v16 by [@karkowg](https://github.com/karkowg) in https://github.com/laravel/cashier-stripe/pull/1721
+* Fix repeated word "the" in code comment by [@caendesilva](https://github.com/caendesilva) in https://github.com/laravel/cashier-stripe/pull/1723
+
+## [v15.4.3](https://github.com/laravel/cashier/compare/v15.4.2...v15.4.3) - 2024-09-03
+
+* [15.x] Prevent mass assignment issue by [@driesvints](https://github.com/driesvints) in https://github.com/laravel/cashier-stripe/pull/1713
+
+## [v15.4.2](https://github.com/laravel/cashier/compare/v15.4.1...v15.4.2) - 2024-08-20
+
+* Add missing docblocks by [@u01jmg3](https://github.com/u01jmg3) in https://github.com/laravel/cashier-stripe/pull/1694
+* Fixes SQLite migration rollback by [@crynobone](https://github.com/crynobone) in https://github.com/laravel/cashier-stripe/pull/1703
+* [15.x] Catch missing payment intents by [@shatterproof](https://github.com/shatterproof) in https://github.com/laravel/cashier-stripe/pull/1704
 
 ## [v15.4.1](https://github.com/laravel/cashier/compare/v15.4.0...v15.4.1) - 2024-07-09
 
