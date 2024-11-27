@@ -8,7 +8,7 @@ use Stripe\Billing\MeterEvent;
 trait ManagesUsageBilling
 {
     /**
-     * Get all the defined billing meters.
+     * Get all of the defined billing meters.
      *
      * @param  array  $options
      * @param  array  $requestOptions
@@ -40,8 +40,8 @@ trait ManagesUsageBilling
         return $this->stripe()->billing->meterEvents->create([
             'event_name' => $meter,
             'payload' => [
-                'value' => $quantity,
                 'stripe_customer_id' => $this->stripeId(),
+                'value' => $quantity,
             ],
             ...$options,
         ], $requestOptions);
