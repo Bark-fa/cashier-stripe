@@ -55,15 +55,13 @@ trait ManagesUsageBilling
      * @param  array  $requestOptions
      * @return \Illuminate\Support\Collection
      */
-    public function meterEventSummaries(string $meterId, array $options = [], array $requestOptions = []): Collection
+    public function meterEventSummaries(string $meterId, int $startTime = 1, ?int $endTime = null, array $options = [], array $requestOptions = []): Collection
     {
         $this->assertCustomerExists();
 
-        $startTime = $options['start_time'] ?? 1;
-
-        $endTime = $options['end_time'] ?? time();
-
-        unset($options['start_time'], $options['end_time']);
+        if (!isset($endTime)) {
+            $endTime = time();
+        }
 
         return new Collection($this->stripe()->billing->meters->allEventSummaries(
             $meterId,
